@@ -26,6 +26,8 @@
 
 <script>
 
+import router from "../../router.js";
+
 export default {
 
     name: "StoreUserComponent",
@@ -51,10 +53,7 @@ export default {
                 password: this.password
             }).then(
                 response => {
-                    this.name = null
-                    this.email = null
-                    this.password = null
-                    this.$parent.$refs.index.getUsers()
+                router.push({name: 'users.index'})
                 }
             ).catch(error => {
 

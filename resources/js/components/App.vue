@@ -1,9 +1,11 @@
 <template>
     <div>
-        <RouterLink :to="{name: 'users.index'}">Users</RouterLink>
-        <RouterLink :to="{name: 'users.create'}">Add</RouterLink>
-        <RouterView/>
 
+        <RouterLink :to="{name: 'users.index'}">Users</RouterLink>
+        <RouterLink :to="{name: 'posts.index'}">Posts</RouterLink>
+
+
+        <RouterView/>
     </div>
 </template>
 

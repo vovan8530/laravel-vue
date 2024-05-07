@@ -8,6 +8,8 @@
 import './bootstrap';
 import {createApp} from 'vue';
 
+import {store} from './store/store.js';
+
 
 import router from './router'
 
@@ -21,11 +23,12 @@ import router from './router'
 // import ExampleComponent from './components/ExampleComponent.vue';
 // app.component('example-component', ExampleComponent);
 
-import Index from "./components/Index.vue";
+import App from "./components/App.vue";
 
 const app = createApp({})
-    .component('Index', Index)
+    .component('App', App)
     .use(router)
+    .use(store)
     .mount('#app');
 
 /**

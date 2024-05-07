@@ -1,7 +1,8 @@
 <template>
 
-    <StoreUserComponent ref="store"></StoreUserComponent>
-    <IndexUserComponent ref="index"></IndexUserComponent>
+    <RouterLink :to="{name: 'users.index'}">Users all</RouterLink>
+    <RouterLink :to="{name: 'users.create'}">Add</RouterLink>
+
 
 </template>
 
